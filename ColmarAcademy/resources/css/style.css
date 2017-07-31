@@ -1,0 +1,456 @@
+/* Universal Styles */
+
+body {
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-family: "Quattrocento";
+  color: #ffffff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-family: "Fanwood Text";
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: "Quattrocento";
+  color: #ffffff;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-family: "Fanwood Text";
+}
+
+h5 {
+  font-size: 1.7rem;
+  font-family: "Fanwood Text";
+  color: #ffffff;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-family: "Quattrocento";
+  color: #ffffff;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Fanwood Text";
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  padding-left: 24px;
+  position: relative;
+  top:7px;
+}
+
+.logo {
+  font-family: "Quattrocento";
+}
+
+.logo span {
+  color: #7fffd4;
+}
+
+nav {
+  font-family: "Fanwood Text";
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 810px) {
+  #desktop-nav {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 811px) {
+  #mobile-nav {
+    display: none;
+  }
+}
+
+/* Banner Section */
+#banner {
+  background-color: #000000;
+  display: flex;
+  padding: 32px 24px;
+}
+
+#banner .i-container {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+
+#banner .i-container img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+#banner .p-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  width: 40%;
+  height: auto;
+}
+
+#banner .p-container h5 {
+  text-align: center;
+}
+
+.p-container .btn {
+  background-color: #20B2AA;
+  color: #FFFFFF;
+  padding: 10px 40px;
+  border: 1px solid #20B2AA;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: "Quattrocento";
+}
+
+.p-container .btn:hover {
+  border: 1px solid #20B2AA;
+  background-color: #fff;
+  color: #20B2AA;
+}
+
+@media only screen and (max-width: 810px) {
+  #banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #banner .i-container {
+    display: flex;
+    justify-content: center;
+  }
+  #banner img {
+    max-height: 180px;
+    width: auto;
+  }
+  #banner .p-container {
+    display: flex;
+    padding: 32px 16px;
+  }
+  #banner .p-container h1 {
+    padding-bottom: 32px;
+  }
+  #banner .p-container h5 {
+    padding-bottom: 24px;
+  }
+}
+
+/* Information Section */
+#information {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  padding: 32px 24px;
+}
+
+#information .container-left {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#information .i-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#information .i-container img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 16px;
+}
+
+#information .container-left .p-container h2 {
+  padding-bottom: 24px;
+  padding-left: 10px;
+}
+
+.container-left .p-container span {
+  font-family: "Quattrocento";
+}
+
+#information .container-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  width: 40%;
+  height: auto;
+}
+
+#information .container-info {
+  width: 423px;
+  height: 168px;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+}
+
+#information .mini-icontainer {
+  display: inline-flex;
+  margin-right: 40px;
+  width: 35%;
+  height: auto;
+  display: block;
+}
+
+#information .mini-icontainer img {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+#information .mini-pcontainer {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 16px;
+  justify-content: center;
+}
+
+#information .mini-pcontainer h4 {
+  padding-bottom: 8px;
+  padding-left: 10px;
+}
+
+#information .mini-pcontainer span {
+  color: #20B2AA;
+}
+
+#information .mini-pcontainer span:hover {
+  cursor: pointer;
+  color: #0000ff;
+}
+
+@media only screen and (max-width: 810px) {
+  #information .container-left {
+    display: none;
+  }
+  #desktop-info {
+    display: none;
+  }
+}
+
+@media only screen and (min-height: 811px){
+  .mobile-info {
+    display: none;
+  }
+  #mobile-info {
+    display: none;
+  }
+}
+/* Courses Section */
+#courses {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 32px 24px;
+}
+
+#courses h3 {
+  text-align: center;
+  padding: 32px;
+}
+
+.container {
+  display: inline-block;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.second-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-mini {
+  padding: 32px;
+}
+
+.course {
+  padding: 16px;
+}
+
+span {
+  padding: 8px 16px;
+}
+
+p {
+  padding: 8px 0px 24px 16px;
+}
+
+.container-mini img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 810px) {
+  #courses .container {
+    display: none;
+  }
+  .mobile-courses {
+    background-color: #000;
+    color: #fff;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 811px) {
+  .mobile-courses {
+    display: none;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .mobile-courses h4 {
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .mobile-courses h4:hover {
+    color: #20B2AA;
+  }
+}
+
+/* Exhibit Section */
+#exhibit {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 32px 24px;
+}
+
+#exhibit h3 {
+  text-align: center;
+  padding: 32px;
+}
+
+.containers {
+  display: flex;
+}
+
+#exhibit .container-left {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 24px;
+}
+
+#exhibit .p-container h4 {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+}
+
+#exhibit .p-container p {
+  padding-bottom: 32px;
+}
+
+#exhibit .container-right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  padding-left: 16px;
+}
+
+#thesis {
+  display: flex;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+#thesis .mini-pcontainer{
+  padding-top: 16px;
+}
+
+#thesis h4 {
+  padding-left: 16px;
+}
+
+#thesis p {
+  padding-left: 16px;
+}
+
+@media only screen and (max-width: 810px) {
+  #exhibit .container-right {
+    display: none;
+  }
+  #exhibit .p-container {
+    display: none;
+  }
+  #exhibit .containers {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.copy {
+  font-family: "Fanwood Text";
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.copy span {
+  font-family: "Quattrocento";
+}
+
+footer ul li {
+  font-family: "Fanwood Text";
+}
